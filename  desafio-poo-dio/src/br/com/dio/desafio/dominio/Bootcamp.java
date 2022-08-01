@@ -14,6 +14,7 @@ public class Bootcamp {
     private final LocalDate dataFinal = dataInicial.plusDays(45);
     private Set<Dev> devsInscritos = new HashSet<>();
     private Set<Conteudo> conteudos = new LinkedHashSet<>();
+    
     public String getNome() {
         return nome;
     }
@@ -44,6 +45,7 @@ public class Bootcamp {
     public void setConteudos(Set<Conteudo> conteudos) {
         this.conteudos = conteudos;
     }
+
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -56,6 +58,7 @@ public class Bootcamp {
         result = prime * result + ((nome == null) ? 0 : nome.hashCode());
         return result;
     }
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
